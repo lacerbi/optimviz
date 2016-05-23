@@ -10,6 +10,8 @@ if nargin == 0
     return;
 end
 
+for i = 1:100; display('a'); end
+
 varargout{1} = 100*(x(:,2)-x(:,1).^2).^2+(1-x(:,1)).^2;
 if nargout > 1
     varargout{2} = [-400*(x(:,2)-x(:,1).^2).*x(:,1)-2*(1-x(:,1)), 200*(x(:,2)-x(:,1).^2)];
