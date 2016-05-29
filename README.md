@@ -6,4 +6,4 @@ The scripts runs *fminsearch*, *fminunc*, *patternsearch*, multi-level coordinat
 
 To run most of these algorithms you will need MATLAB's [Optimization Toolbox](http://www.mathworks.com/products/optimization/) and [Global Optimization Toolbox](http://www.mathworks.com/products/global-optimization/).
 
-![demo_opt](https://github.com/lacerbi/demo-opt/blob/master/demo_opt.png)
+![demo_opt](http://luigiacerbi.com/wp-content/uploads/2016/05/demo_opt.png)
