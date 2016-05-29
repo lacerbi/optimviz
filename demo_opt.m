@@ -55,9 +55,9 @@ optfun('Bayesian pattern search (BPS)',@rosenbrock);
 try bps(@optfun,x0,LB,UB); catch display('BPS not installed.'); end
 
 %% IMGPO
-rng('default'); rng(0); x0 = [-0.5,2.5]; LB = [-2,-1]; UB = [2,3];
-optfun('IMGPO',@rosenbrock);
-try IMGPO_default_run(@optfun,numel(LB),[LB;UB]',300,0,0,0,0); catch display('IMGPO not installed.'); end
+% rng('default'); rng(0); x0 = [-0.5,2.5]; LB = [-2,-1]; UB = [2,3];
+% optfun('IMGPO',@rosenbrock);
+% try IMGPO_default_run(@optfun,numel(LB),[LB;UB]',300,0,0,0,0); catch display('IMGPO not installed.'); end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % NOISY OBJECTIVE FUNCTION
