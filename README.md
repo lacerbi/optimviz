@@ -1,4 +1,4 @@
-# demo_opt
+## demo-opt - Optimization demo for MATLAB
 
-## Optimization demo
+Run the script *demo_opt.m* for a visualization of several MATLAB optimizers at work.
 
