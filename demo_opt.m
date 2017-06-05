@@ -4,7 +4,7 @@
 %% rosenbrock
 optfun('Rosenbrock''s banana function',@rosenbrock);
 optfun([1,1]);
-pause
+pause 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DETERMINISTIC OBJECTIVE FUNCTION
@@ -51,8 +51,10 @@ cmaes_wrapper(@optfun,x0,LB,UB,LB,UB,struct('Seed',0)); rng('default');
 
 %% Bayesian pattern search
 rng('default'); rng(0); x0 = [-0.5,2.5]; LB = [-2,-1]; UB = [2,3]; warning off;
-optfun('Bayesian pattern search (BPS)',@rosenbrock);
-try bps(@optfun,x0,LB,UB); catch display('BPS not installed.'); end
+%optfun('Bayesian pattern search (BPS)',@rosenbrock);
+% try bps(@optfun,x0,LB,UB); catch display('BPS not installed.'); end
+optfun('Bayesian adaptive direct search (BADS)',@rosenbrock);
+try bads(@optfun,x0,LB,UB,LB,UB,[],struct('TolFun',1e-3)); catch display('BADS not installed.'); end
 
 %% IMGPO
 % rng('default'); rng(0); x0 = [-0.5,2.5]; LB = [-2,-1]; UB = [2,3];
@@ -94,8 +96,10 @@ cmaes_wrapper(@optfun,x0,LB,UB,LB,UB,struct('Seed',0,'Noise',struct('on',1))); r
 
 %% noisy Bayesian pattern search
 rng('default'); rng(0); x0 = [-0.5,2.5]; LB = [-2,-1]; UB = [2,3]; noise = @(y) 1 + 0.5*log(1+y);
-optfun('BPS (noisy)',@rosenbrock,noise);
-try bps(@optfun,x0,LB,UB,[],[],struct('UncertaintyHandling','on')); catch display('BPS not installed.'); end
+%optfun('BPS (noisy)',@rosenbrock,noise);
+%try bps(@optfun,x0,LB,UB,[],[],struct('UncertaintyHandling','on')); catch display('BPS not installed.'); end
+optfun('BADS (noisy)',@rosenbrock,noise);
+try bads(@optfun,x0,LB,UB,LB,UB,[],struct('UncertaintyHandling','on')); catch display('BADS not installed.'); end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % MULTIMODAL OBJECTIVE FUNCTION
