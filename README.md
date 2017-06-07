@@ -2,6 +2,8 @@
 
 This demo visualizes several MATLAB derivative-free optimizers at work on standard test functions. This is purely for demonstration purposes. For a proper benchmark of different MATLAB optimizers, see [[1](https://github.com/lacerbi/optimviz#reference)].
 
+[Follow me on Twitter](https://twitter.com/AcerbiLuigi) for updates about other projects I am involved with, or drop me an email at  <luigi.acerbi@nyu.edu> to talk about computational modeling, optimization, and MCMC.
+
 ## Optimizers
 
 The optimization algorithms visualized here are:
