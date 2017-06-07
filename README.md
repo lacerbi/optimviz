@@ -47,11 +47,11 @@ To run some of these algorithms you will need MATLAB's [Optimization Toolbox](ht
 
 ## Reference
 
-For more details about the benchmark comparing different MATLAB optimizers on artificial and real applied problems (fitting of computational models), see the following reference
+For more details about the benchmark comparing different MATLAB optimizers on artificial and real applied problems (fitting of computational models), see the following reference:
 
 1. Acerbi, L. & Ma, W. J. (2017). Practical Bayesian Optimization for Model Fitting with Bayesian Adaptive Direct Search. *arXiv preprint*, arXiv:1705.04405. ([link](https://arxiv.org/abs/1705.04405))
 
 ### License
 
-OptimViz is released under the terms of the [GNU General Public License v3.0](https://github.com/lacerbi/optimviz/blob/master/LICENSE.txt).
+*OptimViz* is released under the terms of the [GNU General Public License v3.0](https://github.com/lacerbi/optimviz/blob/master/LICENSE.txt).
 
