@@ -1,0 +1,28 @@
+Remarks:
+
+1. Due to rounding errors, it is possible that functions are 
+evaluated sligtly outside the given range; should this cause 
+problems to your function evaluator, simply project the point 
+in your evaluation routine to the desired range before 
+evaluation. This will remedy the problem without affecting 
+the quality of the solution.
+
+2. A global line search is not an optimization routine but a routine that 
+brings you down towards the global minimum, by a significant amount. 
+gls.m might miss a minimum if, near it, the graph looks like a deep hole
+in a surface that does not much dip in close to the hole. Only pieces
+of the curve are refined that look bumpy enough, as seen from the
+points already sampled. That's why for a very smooth function, it
+stops after 5 or 6 function values, thinking there is nothing more 
+to be discovered. 
+
+To refine a best point found (or a secondary minimum), start again with
+x the best point (or the secondary minimum) and xl, xu the neighboring 
+points, and with alist, flist containing the information from these 
+three function evaluations. If necessary repeat.
+
+
+To get many local minima if there are many, set nloc to a large value. 
+But to be reasonably sure to get  a l l  local minima one must to use 
+an algorithm that uses global information (Lipschitz constants or 
+interval slopes or so).

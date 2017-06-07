@@ -66,12 +66,16 @@ else
     insigma = 10;
 end
 
-if ~ischar(fun); strfun = func2str(fun); else strfun = fun; end
+% if ~ischar(fun); strfun = func2str(fun); else strfun = fun; end
+
+if ischar(fun); fun = str2func(fun); end
+cmaes_fun(fun);
+
 [~,~,counteval,outflag,out] = ...
-    cmaes(strfun,x0,insigma,options,varargin{:});
+    cmaes('cmaes_fun',x0',insigma,options,varargin{:});
 
 % Take best solution ever found
 x = out.solutions.bestever.x;
 fval = out.solutions.bestever.f;
 
-if size(x0,2) > 1; x = x'; end
+if size(x0,1) > 1; x = x'; end

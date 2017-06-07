@@ -1,4 +1,7 @@
-function [y,g,flag] = optimplot(funlog,table,n)
+function optimplot(funlog,table,n)
+%OPTIMPLOT Plot optimization panel for OPTIMVIZ.
+%
+%  See also OPTIMVIZ.
 
 fontsize = 24;
 axesfontsize = 18;
@@ -6,9 +9,7 @@ axesfontsize = 18;
 noisy_flag = ~isempty(table.noise) && table.noise > 0;
 
 axes(table.h1);
-    
-% close all;
-    
+        
     % Printout for LaTeX table
     % fprintf('\\texttt{%d} & \\texttt{%.3f} & \\texttt{%.3f} & \\texttt{%.3f} \\\\\n',table.funccount,x(1),x(2),y);
         
@@ -16,10 +17,11 @@ X = funlog.X(1:n,:);
 
 % Re-evaluate Y with true function (assumed vectorized)
 Y = table.fun(X);
+E = Y - table.ymin_true;
 
-% Build running minimum
+% Build running error
 ymin = zeros(n,1);
-for i = 1:n; ymin(i) = min(Y(1:i)); end
+for i = 1:n; ymin(i) = min(E(1:i)); end
 
 %     if ~table.plotPopulation
 %         table.xx = [table.xx; x];
@@ -43,7 +45,7 @@ else
     Z = table.zMat;
 end
 surf(table.xVec,table.yVec,Z,'LineStyle','none'); hold on;
-scatter3(table.xmin(1),table.xmin(2),0+offset,'rd','MarkerFaceColor','r','MarkerEdgeColor','none');    % Minimum
+scatter3(table.xmin(1),table.xmin(2),0+offset,100,'rd','MarkerFaceColor','r','MarkerEdgeColor','none');    % Minimum
 xlabel('x','FontSize',axesfontsize);
 ylabel('y','FontSize',axesfontsize);
 zlabel('f(x,y)','FontSize',axesfontsize);
@@ -80,7 +82,6 @@ semilogy(ymin,'-k','LineWidth',3);
 box off;
 xlabel('Fcn. evals.','FontSize',axesfontsize);
 ylabel('Error','FontSize',axesfontsize);
-% ylabel('f_{min}','Interpreter','TeX');
 xlim([0,100]);
 
 if noisy_flag
@@ -88,16 +89,12 @@ if noisy_flag
     ytick = [1e-2,1,1e2];
     yticklabel = {'0.01','1','100'};
 else
-    ylim([1e-4,1e3]);
+    ylim([1e-3,1e3]);
     ytick = [1e-3,1,1e3];
     yticklabel = {'0.001','1','1000'};
 end
 set(gca,'XTick',[0:50:300],'Ytick',ytick,'YTickLabel',yticklabel,'TickDir','out','FontSize',axesfontsize-4);
-% axis off;
-
 
 drawnow;
-    
-    
     
 end

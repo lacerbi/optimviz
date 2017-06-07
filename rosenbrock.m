@@ -6,8 +6,9 @@ if nargin == 0
     varargout{2} = [2,3];                   % UB
     varargout{3} = [0,3000];                % Zlim
     varargout{4} = [-26.5,60];              % view
-    varargout{5} = [1,1];                   % xmin    
-    varargout{6} = 'Rosenbrock function';   % name    
+    varargout{5} = [1,1];                   % xmin
+    varargout{6} = 'Rosenbrock function';   % name
+    varargout{7} = [-0.5,2.5];              % default x0
     return;
 end
 
