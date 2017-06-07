@@ -1,6 +1,6 @@
 # OptimViz - Optimizer visualization demo for MATLAB
 
-This demo visualizes several MATLAB derivative-free optimizers at work on standard test functions.
+This demo visualizes several MATLAB derivative-free optimizers at work on standard test functions. This is purely for demonstration purposes. For a proper benchmark of different MATLAB optimizers, see [[1](https://github.com/lacerbi/optimviz#reference)].
 
 ## Optimizers
 
