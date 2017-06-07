@@ -2,7 +2,9 @@
 
 This demo visualizes several MATLAB derivative-free optimizers at work on standard test functions.
 
-The optimizers are:
+## Optimizers
+
+The optimization algorithms visualized here are:
 
 - BADS (*Bayesian adaptive direct search*), a novel algorithm that combines a direct search approach with local Bayesian optimization ([link](https://github.com/lacerbi/bads));
 - `fminsearch` (Nelder-Mead), the standard simplex method for nonlinear optimization;
@@ -28,7 +30,7 @@ We see here another noiseless example on the Ackley function:
 
 ## Comments
 
-- BADS works well on these examples, which were chosen to show how different algorithms explore the space. More generally, BADS is best for functions with a noisy or jagged landscape, and with non-negligible computational cost (see [here](https://github.com/lacerbi/bads/wiki#which-kind-of-problems-is-bads-suited-for)).
+- BADS works well on these examples, which were chosen to show how different algorithms explore the space. More generally, BADS is best for functions with a noisy or jagged landscape, and with non-negligible computational cost (see [here](https://github.com/lacerbi/bads/wiki#which-kind-of-problems-is-bads-suited-for)). BADS is available as a ready-to-use MATLAB toolbox [here](https://github.com/lacerbi/bads).
 - `fminsearch` is a generic optimizer which can deal with simple functions, but it should never be the main choice as there are always better alternatives.
 - `fmincon` is generally superior to most optimizers (and in partcular, to `fminsearch`) on smooth functions. However, `fmincon` deals *very badly* with jagged or noisy landscapes.
 - We are not aware of scenarios in which `ga` is a good off-the-shelf choice for continuous-valued optimization. It is often just barely better than random search.
