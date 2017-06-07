@@ -13,11 +13,15 @@ The optimizers are:
 
 We see here an example on the Rosenbrock banana function:
 
-![demo_opt](http://luigiacerbi.com/wp-content/uploads/2016/05/demo_opt.png)
+![demo_opt](https://github.com/lacerbi/optimviz/blob/master/gifs/optimviz-rosenbrock.gif)
 
 We see how the algorithms react to noise, by adding unit Gaussian noise at each function evaluation:
 
+![demo_opt](https://github.com/lacerbi/optimviz/blob/master/gifs/optimviz-rosenbrock-noisy.gif)
+
 We see here another noiseless example on the Ackley function:
+
+![demo_opt](https://github.com/lacerbi/optimviz/blob/master/gifs/optimviz-ackley.gif)
 
 
 ### Comments
@@ -29,12 +33,17 @@ We see here another noiseless example on the Ackley function:
 - MCS can be a great optimizer, but it is somewhat idiosyncratic (it might converge very quickly to a solution).
 - CMA-ES, despite the poor performance shown here, is a good optimizer *if* allowed a very large number of function evaluations.
 
-For more details about a benchmark comparing different MATLAB optimizers on artificial and real applied problems (fitting of computational models), see the following reference:
-
-
-
-
 These animated gifs can be generated via the `optimviz.m` function. 
 
 To run some of these algorithms you will need MATLAB's [Optimization Toolbox](http://www.mathworks.com/products/optimization/) and [Global Optimization Toolbox](http://www.mathworks.com/products/global-optimization/).
+
+## Reference
+
+For more details about the benchmark comparing different MATLAB optimizers on artificial and real applied problems (fitting of computational models), see the following reference
+
+1. Acerbi, L. & Ma, W. J. (2017). Practical Bayesian Optimization for Model Fitting with Bayesian Adaptive Direct Search. *arXiv preprint*, arXiv:1705.04405. ([link](https://arxiv.org/abs/1705.04405))
+
+### License
+
+OptimViz is released under the terms of the [GNU General Public License v3.0](https://github.com/lacerbi/optimviz/blob/master/LICENSE.txt).
 
