@@ -82,7 +82,7 @@ semilogy(ymin,'-k','LineWidth',3);
 box off;
 xlabel('Fcn. evals.','FontSize',axesfontsize);
 ylabel('Error','FontSize',axesfontsize);
-xlim([0,100]);
+xlim([0,table.MaxFunEvals]);
 
 if noisy_flag
     ylim([1e-2,1e3]);
@@ -93,7 +93,7 @@ else
     ytick = [1e-3,1,1e3];
     yticklabel = {'0.001','1','1000'};
 end
-set(gca,'XTick',[0:50:300],'Ytick',ytick,'YTickLabel',yticklabel,'TickDir','out','FontSize',axesfontsize-4);
+set(gca,'XTick',0:50:table.MaxFunEvals,'Ytick',ytick,'YTickLabel',yticklabel,'TickDir','out','FontSize',axesfontsize-4);
 
 drawnow;
     

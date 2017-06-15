@@ -58,6 +58,7 @@ table.ymin = [];
 table.ymin_true = table.fun(table.xmin);
 table.plotPopulation = 0;
 table.funccount = 0;
+table.MaxFunEvals = MaxFunEvals;
 table.noise = noise;
 
 % Added noise?
