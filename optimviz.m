@@ -32,7 +32,8 @@ if nargin < 3 || isempty(noise); noise = 0; end
 if nargin < 4 || isempty(MaxFunEvals); MaxFunEvals = 100; end
 
 seed = 0;
-ScreenPos = [1 41, 1920 958];
+%ScreenPos = [1 41, 1920 958];
+ScreenPos = get(0,'Screensize') + [0 40, 0 -122];
 axesfontsize = 20;
 fontsize = 24;
 
