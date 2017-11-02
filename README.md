@@ -4,6 +4,8 @@ This demo visualizes several MATLAB derivative-free optimizers at work on standa
 
 [Follow me on Twitter](https://twitter.com/AcerbiLuigi) for updates about other projects I am involved with, or drop me an email at  <luigi.acerbi@nyu.edu> to talk about computational modeling, optimization, and MCMC.
 
+I have been giving seminars and tutorials on optimization, model fitting, and model comparison. If you are interested, see [my webpage](http://luigiacerbi.com/tutorials/).
+
 ## Optimizers
 
 The optimization algorithms visualized here are:
