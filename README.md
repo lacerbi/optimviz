@@ -53,7 +53,7 @@ To run some of these algorithms you will need MATLAB's [Optimization Toolbox](ht
 
 For more details about the benchmark comparing different MATLAB optimizers on artificial and real applied problems (fitting of computational models), see the following reference:
 
-1. Acerbi, L. & Ma, W. J. (2017). Practical Bayesian Optimization for Model Fitting with Bayesian Adaptive Direct Search. *arXiv preprint*, arXiv:1705.04405. ([link](https://arxiv.org/abs/1705.04405))
+1. Acerbi, L. & Ma, W. J. (2017). Practical Bayesian Optimization for Model Fitting with Bayesian Adaptive Direct Search. In *Advances in Neural Information Processing Systems 30*, pages 1834-1844. ([link](https://papers.nips.cc/paper/6780-practical-bayesian-optimization-for-model-fitting-with-bayesian-adaptive-direct-search), [arXiv preprint](https://arxiv.org/abs/1705.04405))
 
 For more info about my work in computational neuroscience and machine learning, follow me on Twitter: https://twitter.com/AcerbiLuigi
 
