@@ -49,11 +49,14 @@ The generated animated gifs are uncompressed. We recommend to compress them befo
 
 To run some of these algorithms you will need MATLAB's [Optimization Toolbox](http://www.mathworks.com/products/optimization/) and [Global Optimization Toolbox](http://www.mathworks.com/products/global-optimization/).
 
-## Reference
+## References
 
 For more details about the benchmark comparing different MATLAB optimizers on artificial and real applied problems (fitting of computational models), see the following reference:
 
 1. Acerbi, L. & Ma, W. J. (2017). Practical Bayesian Optimization for Model Fitting with Bayesian Adaptive Direct Search. *arXiv preprint*, arXiv:1705.04405. ([link](https://arxiv.org/abs/1705.04405))
+
+For more info about my work in computational neuroscience and machine learning, follow me on Twitter: https://twitter.com/AcerbiLuigi
+
 
 ### License
 
