@@ -2,7 +2,7 @@
 
 This demo visualizes several MATLAB derivative-free optimizers at work on standard test functions. This is purely for demonstration purposes. For a proper benchmark of different MATLAB optimizers, see [[1](https://github.com/lacerbi/optimviz#reference)].
 
-[Follow me on Twitter](https://twitter.com/AcerbiLuigi) for updates about other projects I am involved with, or drop me an email at  <luigi.acerbi@nyu.edu> to talk about computational modeling, optimization, and MCMC.
+[Follow me on Twitter](https://twitter.com/AcerbiLuigi) for updates about other projects I am involved with, or drop me an email at  <luigi.acerbi@unige.ch> to talk about computational modeling, optimization, and (approximate) Bayesian inference.
 
 I have been giving seminars and tutorials on optimization, model fitting, and model comparison. If you are interested, see [my webpage](http://luigiacerbi.com/tutorials/).
 
@@ -55,7 +55,7 @@ For more details about the benchmark comparing different MATLAB optimizers on ar
 
 1. Acerbi, L. & Ma, W. J. (2017). Practical Bayesian Optimization for Model Fitting with Bayesian Adaptive Direct Search. In *Advances in Neural Information Processing Systems 30*, pages 1834-1844. ([link](https://papers.nips.cc/paper/6780-practical-bayesian-optimization-for-model-fitting-with-bayesian-adaptive-direct-search), [arXiv preprint](https://arxiv.org/abs/1705.04405))
 
-For more info about my work in computational neuroscience and machine learning, follow me on Twitter: https://twitter.com/AcerbiLuigi
+For more info about my work in machine learning and computational neuroscience, follow me on Twitter: https://twitter.com/AcerbiLuigi
 
 
 ### License
