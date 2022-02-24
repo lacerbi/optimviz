@@ -4,7 +4,8 @@ This demo visualizes several MATLAB derivative-free optimizers at work on standa
 
 [Follow me on Twitter](https://twitter.com/AcerbiLuigi) for updates about other projects I am involved with, or drop me an email at  <luigi.acerbi@helsinki.fi> to talk about computational modeling, optimization, and (approximate) Bayesian inference.
 
-I have been giving seminars and tutorials on optimization, model fitting, and model comparison. If you are interested, see [my group webpage](https://www2.helsinki.fi/en/researchgroups/machine-and-human-intelligence/teaching).
+I have been giving seminars and tutorials on optimization, model fitting, and model comparison around the world (see [here](https://www2.helsinki.fi/en/researchgroups/machine-and-human-intelligence/teaching)).
+If you are interested in this research, find more on [my group webpage](https://www2.helsinki.fi/en/researchgroups/machine-and-human-intelligence) at the Department of Computer Science of the University of Helsinki, Finland.
 
 ## Optimizers
 
