@@ -2,9 +2,9 @@
 
 This demo visualizes several MATLAB derivative-free optimizers at work on standard test functions. This is purely for demonstration purposes. For a proper benchmark of different MATLAB optimizers, see [[1](https://github.com/lacerbi/optimviz#reference)].
 
-[Follow me on Twitter](https://twitter.com/AcerbiLuigi) for updates about other projects I am involved with, or drop me an email at  <luigi.acerbi@unige.ch> to talk about computational modeling, optimization, and (approximate) Bayesian inference.
+[Follow me on Twitter](https://twitter.com/AcerbiLuigi) for updates about other projects I am involved with, or drop me an email at  <luigi.acerbi@helsinki.fi> to talk about computational modeling, optimization, and (approximate) Bayesian inference.
 
-I have been giving seminars and tutorials on optimization, model fitting, and model comparison. If you are interested, see [my webpage](http://luigiacerbi.com/tutorials/).
+I have been giving seminars and tutorials on optimization, model fitting, and model comparison. If you are interested, see [my group webpage](https://www2.helsinki.fi/en/researchgroups/machine-and-human-intelligence/teaching).
 
 ## Optimizers
 
